@@ -1,8 +1,21 @@
 
+@import url('https://fonts.googleapis.com/css2?family=M+PLUS+Rounded+1c&display=swap');
 .header-text{
   margin-top: 1rem;
   margin-right: 1rem;
     font-family:Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+}
+.font-x{
+  font-family: 'M PLUS Rounded 1c', sans-serif;}
+
+.comp1{
+  background-color: #17171700;
+  background-size: 100vw;
+  width: 95vw;
+  height: 45vw;
+  display: flex;
+  flex-flow: row;
+  
 }
 .insta{
   width:60px;
@@ -50,4 +63,353 @@
   .header-btn:hover{
     box-shadow: 0 0 20px blue;
   }
+}
+
+
+
+
+
+
+
+ .body22 ,html{
+  display: grid;
+}
+
+html {
+  height: 100%;
+}
+
+body {
+  background: #000;
+}
+
+.svg67[height="0"] {
+  position: absolute;
+}
+@property --k {
+  syntax: "<number>";
+  initial-value: 0;
+  inherits: false;
+}
+.name {
+  /* no pseudo needed */
+  --k: 0;
+  place-self: center;
+  background: #ffeb54;
+  -webkit-background-clip: text;
+  background-clip: text;
+  color: transparent;
+  font: 400 clamp(.875em, 7.25vw, 5em) arial black, sans-serif;
+  text-align: center;
+  text-transform: uppercase;
+  /* needs support for animating custom properties */
+  /* Firefox not quite there yet, but it's coming */
+  animation: k 4s linear infinite;
+  text-decoration: none;
+  font-size: 5vw;
+}
+
+@keyframes k {
+  to {
+    --k: 1 ;
+  }
+}
+
+
+
+.photo-div{
+  border-radius:36% 64% 63% 37% / 31% 39% 61% 69% ;
+  width: 5vw;
+  height: 5vw;
+  background:#ffeb54;
+  animation: k 4s linear infinite;
+   filter: url(#goo);
+
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.photo-div-img{
+  border-radius: 36% 64% 63% 37% / 31% 39% 61% 69% ;
+width: 4vw;
+height: 4vw;
+box-shadow: 0 0 50px rgb(196, 255, 77);
+
+}
+
+.myphoto00{
+  background:#ffeb54;
+  border-radius:  36% 64% 51% 49% / 31% 39% 61% 69% 
+}
+
+.myphoto{
+ filter: inherit;
+  border-radius:36% 64% 51% 49% / 31% 39% 61% 69% ;
+  box-shadow: 0 0 10px rgba(196, 255, 77, 77);
+
+}
+
+
+.light-bg{
+  background: linear-gradient(90deg, hsl(calc(var(--k)*1turn), 95%, 65%), hsl(calc(var(--k)*1turn + 90deg), 95%, 65%));
+  animation: k 4s linear infinite;
+  filter: url(#f);
+
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+.bodyname {
+  overflow: hidden;
+  width: 40vw;
+  height: 30vh;
+  font-family: sans-serif;
+  background: transparent;
+}
+
+.h1name {
+  margin: 0;
+  font-weight: bold;
+  font-size: 8vw;
+  text-align: center;
+  line-height: 110px;
+  color:#ffeb54;
+  text-shadow: 2px 2px 0 #f4ff7c;
+}
+
+.goo {
+  position: relative;
+ 
+  width: 40vw;
+  margin: auto;
+  filter: url(#goo);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.drop {
+  opacity: 0;
+  width: 20px;
+  height: 25px;
+  background: #ffeb54;
+  border-radius: 50% 50% 51% 49% / 69% 72% 28% 31% ;
+  position: absolute;
+  animation: drip 9s infinite;
+  border: 2px solid #ffeb54;
+  border-top: none;
+  top: 20px;
+  left: 91px;
+}
+
+.drop:nth-child(2) {
+  left: 130px;
+  animation-delay: 3s;
+}
+.drop:nth-child(3) {
+  left: 297px;
+  animation-delay: 2s;
+}
+.drop:nth-child(4) {
+  left: 203px;
+  animation-delay: 4s;
+}
+.drop:nth-child(5) {
+  left: 415px;
+  animation-delay: 1.5s;
+}
+.drop:nth-child(6) {
+  left: 509px;
+  animation-delay: 5s;
+}
+
+
+
+.droppp{
+  opacity: 0;
+  width: 20px;
+  height: 25px;
+  background: #ffeb54;
+  background: #171717;
+  border-radius: 50% 50% 51% 49% / 69% 72% 28% 31% ;
+  position: absolute;
+  animation: drip 16s infinite;
+  border: 2px solid #ffeb54;
+  border-top: none;
+  top: -25px;
+  left: 91px;
+}
+
+.droppp:nth-child(2) {
+  left: 10vw;
+  animation-delay: 3s;
+}
+.droppp:nth-child(3) {
+  left: 30vw;
+  animation-delay: 5s;
+}
+.droppp:nth-child(4) {
+  left: 50vw;
+  animation-delay: 13s;
+}
+.droppp:nth-child(5) {
+  left: 70vw;
+  animation-delay: 1s;
+}
+.droppp:nth-child(6) {
+  left: 90vw;
+  animation-delay: 7s;
+}
+
+
+
+@keyframes drip {
+  0% {
+    opacity: 0;
+    transform: translateY(0);
+  }
+  35% {
+    opacity: 1;
+    transform: translateY(30px);
+  }
+  50% {
+    transform: translateY(110vh);
+  }
+  100% {
+    transform: translateY(110vh);
+  }
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+@keyframes fade-in {
+  0% {
+    opacity: 0;
+  }
+  100% {
+    opacity: 1;
+  }
+}
+
+@keyframes drop {
+  0% {
+    bottom: 0px;
+    opacity: 1;
+  }
+  
+  80% {
+    opacity: 1;
+  }
+  
+  100% {
+    opacity: 1;
+    bottom: -200px;
+  }
+}
+
+@keyframes wave {
+  0% {
+    background-position: 0 160px;
+    background-size: 170px 300px;
+  }
+  
+  100% {
+    background-position: 500px -18px;
+    background-size: 250px 150px;
+  }
+}
+
+
+.loader {
+  width: 120px;
+  height: 120px;
+  position: fixed;
+  margin: auto;
+  left: 0;
+  right: 0;
+  top: 0;
+  bottom: 0;
+  text-align: center;
+  line-height: 80px;
+  font-family: sans-serif;
+  color: #ffffff;
+  font-size: 16px;
+}
+
+
+
+.drops {
+  -webkit-filter: url('#liquid');
+  filter: url('#liquid');
+  position:absolute;
+  top:0;
+  left:0;
+  bottom:0;
+  right:0;
+  z-index: 1;
+  opacity: 0;
+  animation: fade-in .2s linear .9s forwards;
+}
+
+.drop1 , .drop2 {
+  width: 25px;
+  height: 25px;
+  border-radius: 50%;
+  position: absolute;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  margin: auto;
+  background-color:#ffeb54;
+}
+
+.drop1 {
+  width: 80px;
+  height: 16px;
+  bottom: 2px;
+  border-radius: 0;
+}
+
+.drop2 {
+  animation: drop 1.3s cubic-bezier(1,.19,.66,.12) .5s infinite;
 }
